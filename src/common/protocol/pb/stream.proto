@@ -1,0 +1,138 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+import "common.proto";
+
+////////////////////////////////////////////////////////////////////////////////
+
+message PublishStreamReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required string token = 5;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message PublishStreamRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 result = 5;
+	required string msg = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnpublishStreamReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required string token = 5;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnpublishStreamRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 result = 5;
+	required string msg = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message SubscribeStreamReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required string token = 5;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message SubscribeStreamRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required string stream_addr = 5;
+	required uint32 result = 6;
+	required string msg = 7;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnsubscribeStreamReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required string token = 5;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnsubscribeStreamRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 result = 5;
+	required string msg = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+// Notify user to login send channel of stream
+message LoginSendChannelNotify {
+	required uint32 app_id = 1;
+	required uint32 user_id = 2;
+	required uint32 user_type = 3;
+	required NetStream stream = 4;
+	required string stream_addr = 5;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+// Tell received the login send channel notify
+message LoginSendChannelAck {
+	required uint32 app_id = 1;
+	required uint32 user_id = 2;
+	required uint32 user_type = 3;
+	required NetStream stream = 4;
+	required uint32 result = 5;
+	required string msg = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message GetParentNodeReq {
+	required uint32 service_type = 1;
+	required string instance_id = 2;
+	required string service_addr = 3;
+	required NetStream stream = 4;
+	
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message StreamNode {
+	required uint32 service_type = 1;
+	required string instance_id = 2;
+	required string service_addr = 3;
+}
+
+message GetParentNodeRsp {
+	required NetStream stream = 1;
+	repeated StreamNode nodes = 2;
+}
+
+////////////////////////////////////////////////////////////////////////////////

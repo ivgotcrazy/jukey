@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\common\util\async\async-proxy-base.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\async\defer.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\async\mq-async-proxy.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\async\session-async-proxy.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\execution-timer.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-common.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-dump.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-net.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-pb.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-property.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-reporter.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-stats.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-string.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-time.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\event\common-event.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\event\if-event.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\event\if-notifiable.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\fec\if-fec-decoder.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\fec\if-fec-encoder.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\fec\luigi-fec-decoder.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\fec\luigi-fec-encoder.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\log\util-log.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\log\spdlog-wrapper.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\common-msg-bus.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-bus-impl.hpp" />
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-bus.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-queue-impl.hpp" />
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-queue.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\thread-msg-bus.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\thread\concurrent-thread.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\thread\common-thread.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\thread\event-thread.h" />
+    <ClInclude Include="..\..\..\..\src\common\util\thread\if-thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\common\util\async\async-proxy-base.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\async\mq-async-proxy.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\async\session-async-proxy.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\execution-timer.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-common.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-dump.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-net.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-pb.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-property.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-reporter.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-stats.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-string.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-time.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\event\common-event.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\fec\luigi-fec-decoder.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\fec\luigi-fec-encoder.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\log\util-log.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\log\spdlog-wrapper.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\thread\concurrent-thread.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\thread\common-thread.cpp" />
+    <ClCompile Include="..\..\..\..\src\common\util\thread\event-thread.cpp" />
+    <ClCompile Include="..\..\..\..\third-party\fec\fec.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0d2f0694-6d37-4c81-bc7e-68cc8ce5f859}</ProjectGuid>
+    <RootNamespace>common</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\output\common\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\middle\common\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\output\common\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\middle\common\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_WINSOCK_DEPRECATED_NO_WARNINGS;_MBCS;_WINDOWS;NO_BUSY_WAITING;MSDOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\..\src\base\com-frame\include;..\..\..\..\src\base\net-frame\include;..\..\..\..\src\common\public;..\..\..\..\src\common\protocol;..\..\..\..\src\common\util;..\..\..\..\src\component\property\include;..\..\..\..\src\component\amqp-client\include;..\..\..\..\src\component\timer\include;..\..\..\..\src\component\reporter\include;..\..\..\..\third-party;..\..\..\..\third-party\json;..\..\..\..\third-party\libevent\include;..\..\..\..\third-party\concurrentqueue;..\..\..\..\third-party\http;..\..\..\..\third-party\protobuf\include;..\..\..\..\third-party\fec;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_WINSOCK_DEPRECATED_NO_WARNINGS;_MBCS;_WINDOWS;NO_BUSY_WAITING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\..\src\common\public;..\..\..\..\src\common\timer;..\..\..\..\src\common\util;..\..\..\..\src\common\property;..\..\..\..\src\common\amqp-client;..\..\..\..\src\common\protocol;..\..\..\..\src\core\base-frame\include;..\..\..\..\src\core\streamer\include;..\..\..\..\src\core\net-frame\include;..\..\..\..\src\sdk\media-engine\include;..\..\..\..\third-party;..\..\..\..\third-party\json;..\..\..\..\third-party\sdl\include;..\..\..\..\third-party\ffmpeg\include;..\..\..\..\third-party\libevent\include;..\..\..\..\third-party\concurrentqueue;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

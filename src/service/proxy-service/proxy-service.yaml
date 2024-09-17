@@ -1,0 +1,22 @@
+service:
+  type: 1
+  name: proxy-service
+  instance: proxy-service-1
+  addr: TCP:127.0.0.1:8888
+
+report:
+  host: "127.0.0.1"
+  port: 8080
+  path: "/report"
+  interval: 30 # second
+
+service-ping:
+  interval: 10 # second
+
+route-service:
+  type: 2
+  name: route-service
+  entries:
+    -
+      instance: route-service-1
+      addr: TCP:127.0.0.1:7777

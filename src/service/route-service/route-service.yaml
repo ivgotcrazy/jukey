@@ -1,0 +1,59 @@
+service:
+  type: 2
+  name: route-service
+  instance: route-service-1
+  addr: TCP:127.0.0.1:7777
+  exchange: route-exchange
+
+rabbitmq:
+  addr: TCP:192.168.7.177:5672
+  user: guest
+  pwd: guest
+
+service-ping:
+  exchange: pong-exchange
+  interval: 10 # second
+
+report:
+  host: "127.0.0.1"
+  port: 8080
+  path: "/report"
+  interval: 30 # second
+
+routes:
+  -   
+    type: 4
+    name: user-service
+    exchange: user-exchange
+    messages:
+      - 97 # MSG_USER_LOGIN_REQ
+      - 99 # MSG_USER_LOGOUT_REQ
+  - 
+    type: 3
+    name: terminal-service
+    exchange: terminal-exchange
+    messages:
+      - 65 # MSG_CLIENT_REGISTER_REQ
+      - 67 # MSG_CLIENT_UNREGISTER_REQ
+      - 69 # MSG_CLIENT_OFFLINE_REQ
+  -
+    type: 6
+    name: stream-service
+    exchange: stream-exchange
+    messages:
+      - 161 # MSG_PUBLISH_STREAM_REQ
+      - 163 # MSG_UNPUBLISH_STREAM_REQ
+      - 165 # MSG_SUBSCRIBE_STREAM_REQ
+      - 167 # MSG_UNSUBSCRIBE_STREAM_REQ
+      - 172 # MSG_LOGIN_SEND_CHANNEL_ACK
+  -
+    type: 5
+    name: group-service
+    exchange: group-exchange
+    messages:
+      - 129 # MSG_JOIN_GROUP_REQ
+      - 132 # MSG_LEAVE_GROUP_REQ
+      - 135 # MSG_PUBLISH_MEDIA_REQ
+      - 138 # MSG_PUBLISH_MEDIA_ACK
+      - 139 # MSG_UNPUBLISH_MEDIA_REQ
+      - 142 # MSG_UNPUBLISH_MEDIA_ACK

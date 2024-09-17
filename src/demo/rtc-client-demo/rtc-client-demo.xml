@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<root>
+  <app-id>123456</app-id>
+  <client-id>12345</client-id>
+  <!-- Service address -->
+  <server-addr>TCP:192.168.28.201:8888</server-addr>
+  <client-name>test-client</client-name>
+</root>
+

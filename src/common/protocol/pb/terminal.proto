@@ -1,0 +1,64 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+
+message RegisterReq {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 client_type = 3;
+	required string client_name = 4;
+	required string os = 5;
+	required string device = 6;
+	required string version = 7;
+	required string secret = 8;
+}
+
+message RegisterRsp {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required uint32 result = 4;
+	required string msg = 5;
+}
+
+message UnregisterReq {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required string secret = 4;
+}
+
+message UnregisterRsp {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required uint32 result = 4;
+	required string msg = 5;
+}
+
+message ClientOfflineReq {
+	required uint32 app_id = 1;
+	required string instance_id = 2;
+	required uint32 client_id = 3;
+	required uint32 session_id = 4;
+}
+
+message ClientOfflineRsp {
+	required uint32 app_id = 1;
+	required string instance_id = 2;
+	required uint32 client_id = 3;
+	required uint32 session_id = 4;
+}
+
+// Notify service that client offline
+message ClientOfflineNotify {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+}
+
+message RegisterReqExtendData {
+	required string instance_id = 1;
+	required uint32 session_id = 2;
+}

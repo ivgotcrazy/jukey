@@ -1,0 +1,42 @@
+# load components from
+component-path: ./
+
+# interval of loading loop while service configure files are not ready, in second
+load-config-interval: 3
+
+services:
+  -
+    name: proxy-service
+    cid: cid-proxy-service
+    config: ./service-config/proxy-service.yaml
+    #type: 1
+  -
+    name: route-service
+    cid: cid-route-service
+    config: ./service-config/route-service.yaml
+    #type: 2 
+  -
+    name: terminal-service
+    cid: cid-terminal-service
+    config: ./service-config/terminal-service.yaml
+    #type: 3
+  -
+    name: user-service
+    cid: cid-user-service
+    config: ./service-config/user-service.yaml
+    #type: 4
+  -
+    name: group-service
+    cid: cid-group-service
+    config: ./service-config/group-service.yaml
+    #type: 5
+  -
+    name: stream-service
+    cid: cid-stream-service
+    config: ./service-config/stream-service.yaml
+    #type: 6
+  -
+    name: transport-service
+    cid: cid-transport-service
+    config: ./service-config/transport-service.yaml
+    #type: 7

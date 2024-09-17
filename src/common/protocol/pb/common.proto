@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+message NetStream {
+	required uint32 app_id = 1;
+	required uint32 user_id = 2;
+	required uint32 stream_type = 3;
+	required string stream_id = 4;
+	required uint32 media_src_type = 5;
+	required string media_src_id = 6;
+}

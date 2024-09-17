@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{bcf84abf-52fe-4827-8c06-af8d9e71a149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{40626836-8327-4ec2-b74a-77078b229e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\common">
+      <UniqueIdentifier>{5748b811-5d25-4b2e-8cb5-dba234ad0009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\log">
+      <UniqueIdentifier>{b4307d10-ed40-46d3-9f9c-668839b304ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\msg-bus">
+      <UniqueIdentifier>{47be603f-79b2-4f76-ab24-4b3ce21c21a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\thread">
+      <UniqueIdentifier>{5c414cc2-20df-46fe-84ab-09788a1d1d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\common">
+      <UniqueIdentifier>{2827f1ec-9acb-47e7-b07b-ab31337667b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\log">
+      <UniqueIdentifier>{3d299fbe-6117-43eb-a2f3-36378761fdef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\thread">
+      <UniqueIdentifier>{dfe6e6e2-8eec-4106-baec-7d351f4ddb7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\async">
+      <UniqueIdentifier>{69e7f7b9-613c-4ed9-8396-57ef52772049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\async">
+      <UniqueIdentifier>{46c8960b-21fc-400e-8b57-83dec8218cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\event">
+      <UniqueIdentifier>{bec131c3-b5f5-4841-bc03-c5978cdfb35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\event">
+      <UniqueIdentifier>{1de2f6bb-084c-4e7a-8608-55d3b6524189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\fec">
+      <UniqueIdentifier>{39e3a4cf-2f0d-4e9a-9a8d-6a01c190b23e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\fec">
+      <UniqueIdentifier>{8f71f4ae-ee61-4966-8161-74a9b91bb2cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-common.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-stats.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\log\spdlog-wrapper.h">
+      <Filter>头文件\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-bus.h">
+      <Filter>头文件\msg-bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-bus-impl.hpp">
+      <Filter>头文件\msg-bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-queue.h">
+      <Filter>头文件\msg-bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\msg-queue-impl.hpp">
+      <Filter>头文件\msg-bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\thread-msg-bus.h">
+      <Filter>头文件\msg-bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\thread\common-thread.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\thread\if-thread.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-net.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\async\defer.h">
+      <Filter>头文件\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\async\mq-async-proxy.h">
+      <Filter>头文件\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\async\session-async-proxy.h">
+      <Filter>头文件\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\thread\concurrent-thread.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-dump.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\msg-bus\common-msg-bus.h">
+      <Filter>头文件\msg-bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\thread\event-thread.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\event\common-event.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\event\if-event.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\event\if-notifiable.h">
+      <Filter>头文件\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-time.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\log\util-log.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-reporter.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\async\async-proxy-base.h">
+      <Filter>头文件\async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-pb.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-string.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\util-property.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\fec\if-fec-decoder.h">
+      <Filter>头文件\fec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\fec\if-fec-encoder.h">
+      <Filter>头文件\fec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\fec\luigi-fec-decoder.h">
+      <Filter>头文件\fec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\fec\luigi-fec-encoder.h">
+      <Filter>头文件\fec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\util\common\execution-timer.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-common.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-stats.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\log\spdlog-wrapper.cpp">
+      <Filter>源文件\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\thread\common-thread.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-net.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\async\mq-async-proxy.cpp">
+      <Filter>源文件\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\async\session-async-proxy.cpp">
+      <Filter>源文件\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\thread\concurrent-thread.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-dump.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\thread\event-thread.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\event\common-event.cpp">
+      <Filter>源文件\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-time.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\log\util-log.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-reporter.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\async\async-proxy-base.cpp">
+      <Filter>源文件\async</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-pb.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-string.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\util-property.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\fec\luigi-fec-decoder.cpp">
+      <Filter>源文件\fec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\fec\luigi-fec-encoder.cpp">
+      <Filter>源文件\fec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\third-party\fec\fec.c">
+      <Filter>源文件\fec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\util\common\execution-timer.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

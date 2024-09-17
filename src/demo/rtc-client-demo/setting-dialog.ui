@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>449</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>449</width>
+    <height>348</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>449</width>
+    <height>348</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>411</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="margin" stdset="0">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>131</width>
+        <height>31</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="okButton">
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelButton">
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>18</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget_setting">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>431</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab_spk">
+    <attribute name="title">
+     <string>扬声器</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>扬声器：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_speaker">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>300</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_checkSpk">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始检测</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_checkSpk">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>28</x>
+       <y>60</y>
+       <width>53</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>设备检测：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_mic">
+    <attribute name="title">
+     <string>麦克风</string>
+    </attribute>
+    <widget class="QComboBox" name="comboBox_microphone">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>300</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>麦克风：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_sampleRate">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>300</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>50</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>采样率：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_channelCount">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>90</y>
+       <width>300</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>声道数：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>比特数：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_sampleBits">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>130</y>
+       <width>300</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_testMic">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>170</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>30</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_testMic">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>170</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>28</x>
+       <y>170</y>
+       <width>53</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>设备检测：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_cam">
+    <attribute name="title">
+     <string>摄像头</string>
+    </attribute>
+    <widget class="QComboBox" name="comboBox_camera">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>10</y>
+       <width>300</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>68</y>
+       <width>41</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>帧率：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_pixelFormat">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>40</y>
+       <width>120</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>43</x>
+       <y>40</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>分辨率：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_resolution">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>40</y>
+       <width>120</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_frameRate">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>70</y>
+       <width>251</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>30</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>43</x>
+       <y>10</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>摄像头：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>40</y>
+       <width>54</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>格式：</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_preview">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>95</y>
+       <width>300</width>
+       <height>161</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_fps">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>70</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0 fps</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_record">
+    <attribute name="title">
+     <string>录制</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>278</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

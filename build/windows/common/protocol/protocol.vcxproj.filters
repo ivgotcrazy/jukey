@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\pb">
+      <UniqueIdentifier>{07bcae0a-2d96-4fc4-a640-0ff265163625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\pb">
+      <UniqueIdentifier>{eaa08e6f-3513-4ffd-95f0-c09d82bf298b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\mq-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\group.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\mq.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\stream.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\terminal.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\transport.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\user.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\topo.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\stream-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\terminal-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\topo-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\transport-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\user-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\group-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\sig-msg-builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\protoc\common.pb.h">
+      <Filter>头文件\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\common\protocol\util-protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\common\protocol\mq-msg-builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\group.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\mq.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\stream.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\terminal.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\transport.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\user.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\topo.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\group-msg-builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\stream-msg-builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\terminal-msg-builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\topo-msg-builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\transport-msg-builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\user-msg-builder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\protoc\common.pb.cc">
+      <Filter>源文件\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\protocol\util-protocol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\common\protocol\pb\group.proto">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\src\common\protocol\pb\mq.proto">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\src\common\protocol\pb\stream.proto">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\src\common\protocol\pb\transport.proto">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\src\common\protocol\pb\terminal.proto">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\src\common\protocol\pb\user.proto">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\src\common\protocol\pb\topo.proto">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\src\common\protocol\pb\common.proto">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

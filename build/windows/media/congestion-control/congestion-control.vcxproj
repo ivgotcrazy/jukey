@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\media\congestion-control\jukey-clock.cpp" />
+    <ClCompile Include="..\..\..\..\src\media\congestion-control\dllmain.cpp" />
+    <ClCompile Include="..\..\..\..\src\media\congestion-control\gcc-congestion-controller.cpp" />
+    <ClCompile Include="..\..\..\..\src\media\congestion-control\log.cpp" />
+    <ClCompile Include="..\..\..\..\src\media\congestion-control\simple-paced-sender.cpp" />
+    <ClCompile Include="..\..\..\..\src\media\congestion-control\webrtc-tfb-adapter.cpp" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\environment\environment_factory.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\field_trials_registry.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\rtc_error.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\rtc_event_log\rtc_event_log.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\task_queue\default_task_queue_factory_win.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\task_queue\pending_task_safety_flag.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\task_queue\task_queue_base.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\transport\bitrate_settings.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\transport\field_trial_based_config.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\transport\goog_cc_factory.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\transport\network_types.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\units\data_rate.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\units\data_size.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\units\frequency.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\units\timestamp.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\units\time_delta.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\video\color_space.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\video\hdr_metadata.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\video\video_content_type.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\api\video\video_timing.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\call\rtp_bitrate_configurator.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\call\rtp_transport_controller_send.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\experiments\alr_experiment.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\experiments\field_trial_list.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\experiments\field_trial_parser.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\experiments\field_trial_units.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\experiments\rate_control_settings.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\experiments\struct_parameters_parser.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\acknowledged_bitrate_estimator.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\acknowledged_bitrate_estimator_interface.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\alr_detector.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\bitrate_estimator.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\congestion_window_pushback_controller.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\delay_based_bwe.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\goog_cc_network_control.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\inter_arrival_delta.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\link_capacity_estimator.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\loss_based_bandwidth_estimation.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\loss_based_bwe_v2.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\probe_bitrate_estimator.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\probe_controller.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\robust_throughput_estimator.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\send_side_bandwidth_estimation.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\goog_cc\trendline_estimator.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\remb_throttler.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\rtp\control_handler.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\rtp\transport_feedback_adapter.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\congestion_controller\rtp\transport_feedback_demuxer.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\pacing\bitrate_prober.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\pacing\interval_budget.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\remote_bitrate_estimator\aimd_rate_control.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\remote_bitrate_estimator\bwe_defines.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtcp_packet.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtcp_packet\common_header.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtcp_packet\psfb.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtcp_packet\rtpfb.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtcp_packet\transport_feedback.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtp_header_extensions.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtp_header_extension_map.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtp_packet.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\modules\rtp_rtcp\source\rtp_packet_to_send.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\checks.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\copy_on_write_buffer.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\event.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\event_tracer.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\logging.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\network\sent_packet.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\network_constants.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\network_route.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\numerics\exp_filter.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\platform_thread.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\platform_thread_types.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\race_checker.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\rate_limiter.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\rate_statistics.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\strings\string_builder.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\string_encode.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\string_utils.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\synchronization\sequence_checker_internal.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\synchronization\yield_policy.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\system_time.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\task_queue_win.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\task_utils\repeating_task.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\time_utils.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\rtc_base\zero_memory.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\system_wrappers\source\field_trial.cc" />
+    <ClCompile Include="..\..\..\..\third-party\libwebrtc\system_wrappers\source\metrics.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\media\congestion-control\jukey-clock.h" />
+    <ClInclude Include="..\..\..\..\src\media\congestion-control\gcc-congestion-controller.h" />
+    <ClInclude Include="..\..\..\..\src\media\congestion-control\include\if-congestion-controller.h" />
+    <ClInclude Include="..\..\..\..\src\media\congestion-control\log-sink.h" />
+    <ClInclude Include="..\..\..\..\src\media\congestion-control\log.h" />
+    <ClInclude Include="..\..\..\..\src\media\congestion-control\simple-paced-sender.h" />
+    <ClInclude Include="..\..\..\..\src\media\congestion-control\webrtc-tfb-adapter.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f49b1ea6-b16c-4745-b932-98e53a1752ef}</ProjectGuid>
+    <RootNamespace>congestioncontrol</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\..\output\media\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\middle\media\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CONGESTIONCONTROL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CONGESTIONCONTROL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;WEBRTC_WIN;NOMINMAX;JUKEY_EXPORT;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>..\..\..\..\src\common\public;..\..\..\..\src\common\util;..\..\..\..\src\common\protocol;..\..\..\..\src\base\com-frame\include;..\..\..\..\src\media\transport\include;..\..\..\..\src\media\streamer\include;..\..\..\..\third-party;..\..\..\..\src\media\media-util;..\..\..\..\src\media;..\..\..\..\third-party\libwebrtc;..\..\..\..\third-party\libwebrtc\third_party\abseil-cpp;..\..\..\..\src\media\congestion-control;..\..\..\..\src\media\congestion-control\include;..\..\..\..\src\component\timer\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>..\..\..\..\output\common\util\x64\debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;util.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CONGESTIONCONTROL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

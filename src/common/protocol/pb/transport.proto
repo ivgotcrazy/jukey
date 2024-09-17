@@ -1,0 +1,148 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+import "common.proto";
+
+message LoginSendChannelReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required string token = 5;
+}
+
+message LoginSendChannelRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 channel_id = 5;
+	required uint32 result = 6;
+	required string msg = 7;
+}
+
+message LogoutSendChannelReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 channel_id = 5;
+	required string token = 6;
+}
+
+message LogoutSendChannelRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 channel_id = 5;
+	required uint32 result = 6;
+	required string msg = 7;
+}
+
+message LoginRecvChannelReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required string token = 5;
+}
+
+message LoginRecvChannelRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 channel_id = 5;
+	required uint32 result = 6;
+	required string msg = 7;
+}
+
+message LogoutRecvChannelReq {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 channel_id = 5;
+	required string token = 6;
+}
+
+message LogoutRecvChannelRsp {
+	required uint32 app_id = 1;
+	required uint32 user_type = 2;
+	required uint32 user_id = 3;
+	required NetStream stream = 4;
+	required uint32 channel_id = 5;
+	required uint32 result = 6;
+	required string msg = 7;
+}
+
+message NegotiateReq {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+	repeated string caps = 3;
+}
+
+message NegotiateRsp {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+	required string cap = 3;
+	required uint32 result = 4;
+	required string msg = 5;
+}
+
+message StartSendStreamNotify {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+}
+
+message StartSendStreamAck {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+	required uint32 result = 3;
+	required string msg = 4;
+}
+
+message StopSendStreamNotify {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+}
+
+message StopSendStreamAck {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+	required uint32 result = 3;
+	required string msg = 4;
+}
+
+message PauseRecvStreamReq {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+}
+
+message PauseRecvStreamRsp {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+	required uint32 result = 3;
+	required string msg = 4;
+}
+
+message ResumeRecvStreamReq {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+}
+
+message ResumeRecvStreamRsp {
+	required NetStream stream = 1;
+	required uint32 channel_id = 2;
+	required uint32 result = 3;
+	required string msg = 4;
+}
+
+
+
+
+
+
+

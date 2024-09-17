@@ -1,0 +1,63 @@
+audio-convert-element:
+  dump-before-convert: false
+  dump-after-convert: false
+
+#-------------------------------------------------------------------------------
+
+audio-decode-element:
+  dump-before-decode: false
+  dump-after-decode: false
+
+#-------------------------------------------------------------------------------
+
+audio-encode-element:
+  dump-before-encode: false
+  dump-after-encode: false
+
+#-------------------------------------------------------------------------------
+
+audio-recv-element:
+  dump-recv-data: false
+
+#-------------------------------------------------------------------------------
+
+audio-send-element:
+  dump-send-data: false
+
+#-------------------------------------------------------------------------------
+
+audio-play-element:
+  dump-play-data: false
+
+#-------------------------------------------------------------------------------
+
+camera-element:
+  dump-camera-data: false
+
+#-------------------------------------------------------------------------------
+
+microphone-element:
+  dump-microphone-data: false
+
+#-------------------------------------------------------------------------------
+
+video-encode-element:
+  dump-encoded-data: false
+
+#-------------------------------------------------------------------------------
+
+video-decode-element:
+  dump-before-decode: false
+  dump-after-decode: false
+  # 0:trace, 1:debug, 2:info, 3:warning, 4:error, 5:critical, 6:off
+  log-level: 2
+
+#-------------------------------------------------------------------------------
+
+video-recv-element:
+  dump-recv-data: false
+
+#-------------------------------------------------------------------------------
+
+video-render-element:
+  dump-render-data: false

@@ -1,0 +1,182 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+////////////////////////////////////////////////////////////////////////////////
+
+message MediaEntry {
+	required uint32 stream_type = 1;
+	required string stream_id = 2;
+	required uint32 media_src_type = 3;
+	required string media_src_id = 4;
+}
+
+message JoinGroupReq {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	required string token = 6;
+	repeated MediaEntry media_entries = 7;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message MediaStateEntry {
+	required MediaEntry media_entry = 1;
+	required uint32 media_state = 2;
+}
+
+message GroupUser {
+	required uint32 user_type = 1;
+	required uint32 user_id = 2;
+	repeated MediaStateEntry media_state_entries = 3; 
+}
+
+message JoinGroupRsp {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	repeated GroupUser group_users = 6;
+	required uint32 result = 7;
+	required string msg = 8;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message JoinGroupNotify {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	repeated MediaEntry media_entries = 5;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message LeaveGroupReq {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	required string token = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message LeaveGroupRsp {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	required uint32 result = 6;
+	required string msg = 7;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message LeaveGroupNotify {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message PublishMediaReq {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	required MediaEntry media_entry = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message PublishMediaRsp {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	required MediaEntry media_entry = 6;
+	required uint32 result = 7;
+	required string msg = 8;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message PublishMediaNotify {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required MediaEntry media_entry = 5;
+	required bool need_ack = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message PublishMediaAck {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required MediaEntry media_entry = 5;
+	required uint32 ack_user_id = 6;
+	required uint32 ack_user_type = 7;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnpublishMediaReq {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	required MediaEntry media_entry = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnpublishMediaRsp {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required uint32 login_id = 5;
+	required MediaEntry media_entry = 6;
+	required uint32 result = 7;
+	required string msg = 8;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnpublishMediaNotify {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required MediaEntry media_entry = 5;
+	required bool need_ack = 6;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+message UnpublishMediaAck {
+	required uint32 app_id = 1;
+	required uint32 group_id = 2;
+	required uint32 user_type = 3;
+	required uint32 user_id = 4;
+	required MediaEntry media_entry = 5;
+	required uint32 ack_user_id = 6;
+	required uint32 ack_user_type = 7;
+}

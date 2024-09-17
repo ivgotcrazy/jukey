@@ -1,0 +1,32 @@
+service:
+  type: 5
+  name: group-service
+  instance: group-service-1
+  exchange: group-exchange
+
+rabbitmq:
+  addr: TCP:192.168.7.177:5672
+  user: guest
+  pwd: guest
+
+route-service:
+  type: 2
+  exchange: route-exchange
+
+stream-service:
+  type: 6
+  name: stream-service
+  exchange: stream-exchange
+
+user-service:
+  notify-exchange: user-notify-exchange
+
+report:
+  host: "127.0.0.1"
+  port: 8080
+  path: "/report"
+  interval: 30 # second
+
+service-ping:
+  exchange: ping-exchange  
+  interval: 10 # second

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\include">
+      <UniqueIdentifier>{6e06688e-c746-4042-b13d-b2e26f2dafc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src-holder">
+      <UniqueIdentifier>{d1624d87-746f-450b-99b9-88c9762f2e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\processor">
+      <UniqueIdentifier>{27f06067-f92d-4785-95f7-1e486839ab89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\src-holder">
+      <UniqueIdentifier>{32b96aea-941e-466c-8024-cbda21bc10eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\processor">
+      <UniqueIdentifier>{f8be78a7-9af3-4554-8a6b-dbc5c985eccc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\include\if-media-engine.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\include\if-media-player.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\include\if-media-recorder.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\include\sdk-error.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\engine-common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\media-engine-impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\engine-log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\engine-util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\include\if-media-src-processor.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\include\if-stream-processor.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\include\if-media-dev-mgr.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\media-dev-mgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\audio-stream-src-holder.h">
+      <Filter>头文件\src-holder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\camera-src-holder.h">
+      <Filter>头文件\src-holder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\media-src-holder-base.h">
+      <Filter>头文件\src-holder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\media-src-holder-mgr.h">
+      <Filter>头文件\src-holder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\microphone-src-holder.h">
+      <Filter>头文件\src-holder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\video-stream-src-holder.h">
+      <Filter>头文件\src-holder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\audio-stream-send-processor.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\encoded-audio-play-processor.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\encoded-video-render-processor.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\raw-audio-play-processor.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\raw-video-render-processor.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\video-stream-send-processor.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\stream-processor-base.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\stream-processor-mgr.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\client-sdk\audio-test-processor.h">
+      <Filter>头文件\processor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\engine-util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\media-engine-impl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\engine-log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\media-dev-mgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\audio-stream-src-holder.cpp">
+      <Filter>源文件\src-holder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\camera-src-holder.cpp">
+      <Filter>源文件\src-holder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\media-src-holder-base.cpp">
+      <Filter>源文件\src-holder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\media-src-holder-mgr.cpp">
+      <Filter>源文件\src-holder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\microphone-src-holder.cpp">
+      <Filter>源文件\src-holder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\video-stream-src-holder.cpp">
+      <Filter>源文件\src-holder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\audio-stream-send-processor.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\encoded-audio-play-processor.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\encoded-video-render-processor.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\raw-audio-play-processor.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\raw-video-render-processor.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\stream-processor-base.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\video-stream-send-processor.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\stream-processor-mgr.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\client-sdk\audio-test-processor.cpp">
+      <Filter>源文件\processor</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+service:
+  type: 6
+  name: stream-service
+  instance: stream-service-1
+  exchange: stream-exchange
+
+rabbitmq:
+  addr: TCP:192.168.7.177:5672
+  user: guest
+  pwd: guest
+  
+route-service:
+  exchange: route-exchange
+
+report:
+  host: "127.0.0.1"
+  port: 8080
+  path: "/report"
+  interval: 30 # second

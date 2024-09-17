@@ -1,0 +1,54 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+
+message UserLoginReq {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required uint32 user_type = 4;
+	required uint32 user_id = 5;
+	required string token = 6;
+}
+
+message UserLoginRsp {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required uint32 user_type = 4;
+	required uint32 user_id = 5;
+	required uint32 login_id = 6;
+	required uint32 result = 7;
+	required string msg = 8;
+}
+
+message UserLogoutReq {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required uint32 user_type = 4;
+	required uint32 user_id = 5;
+	required uint32 login_id = 6;
+	required string token = 7;
+}
+
+message UserLogoutRsp {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required uint32 user_type = 4;
+	required uint32 user_id = 5;
+	required uint32 login_id = 6;
+	required uint32 result = 7;
+	required string msg = 8;
+}
+
+message UserOfflineNotify {
+	required uint32 app_id = 1;
+	required uint32 client_id = 2;
+	required uint32 register_id = 3;
+	required uint32 user_type = 4;
+	required uint32 user_id = 5;
+	required uint32 login_id = 6;
+}

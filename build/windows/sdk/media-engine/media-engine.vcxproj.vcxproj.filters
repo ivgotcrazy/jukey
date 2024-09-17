@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{60dd0c20-f7a7-46d8-b004-51ca5313704f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{97e1e505-3274-4073-84fb-34a2394666c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\include">
+      <UniqueIdentifier>{fe366c8c-15e3-4dfe-a6bf-2518c29e076c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\pipeline">
+      <UniqueIdentifier>{6a619b1d-d2c4-4b9b-a91c-1cbea69d5123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\pipeline">
+      <UniqueIdentifier>{55fd3040-e6fd-4271-b997-48912f339674}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\media-engine-impl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\media-dev-mgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\engine-util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\media-controller.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-audio-send-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\audio-stream-src-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\camera-src-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-audio-play-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-video-render-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\media-file-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\microphone-src-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\pipeline-processor-base.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\pipeline-processor-mgr.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-audio-play-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-video-render-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-video-send-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\video-stream-src-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-audio-send-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-video-send-processor.cpp">
+      <Filter>源文件\pipeline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\media-engine-impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\media-dev-mgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\engine-util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\engine-common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\include\if-media-dev-mgr.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\include\if-media-engine.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\include\if-media-recorder.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\include\if-media-controller.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\media-controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-audio-send-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\audio-stream-src-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\camera-src-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-audio-play-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-video-render-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\if-pipeline-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\media-file-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\microphone-src-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\pipeline-processor-base.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\pipeline-processor-mgr.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-audio-play-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-video-render-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\raw-video-send-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\video-stream-src-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-audio-send-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\sdk\media-engine\pipeline\encoded-video-send-processor.h">
+      <Filter>头文件\pipeline</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

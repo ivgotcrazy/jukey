@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\base\net-frame\client-session.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\congestion-controller.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\data-splitter.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\dllmain.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\fec-pkt-assembler.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\fec-protocol.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\link-cap-estimator.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\log.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\lost-pkt-tracer.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\net-common.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\recv-pkt-tracer.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\recv-rate-caculator.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\rtt-filter.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\sending-controller.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\sending-queue.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\server-session.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\session-base.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\session-mgr.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\session-pkt-sender.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\session-protocol.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\session-receiver.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\session-sender.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\session-thread.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\simple-fec-controller.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\tcp-manager.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\tcp-session-pkt-assembler.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\tcp-thread.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\net-frame\udp-manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\base\net-frame\client-session.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\congestion-controller.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\data-splitter.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\fec-pkt-assembler.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\fec-protocol.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-congestion-controller.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-data-splitter.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-fec-controller.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-rtt-filter.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-sending-controller.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-sending-queue.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-session-pkt-assembler.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-session-pkt-sender.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-session-processor.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\if-session.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\include\if-session-mgr.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\include\if-tcp-mgr.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\include\if-udp-mgr.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\include\net-message.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\include\net-public.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\link-cap-estimator.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\log.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\lost-pkt-tracer.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\net-common.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\net-inner-message.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\recv-pkt-tracer.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\recv-rate-caculator.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\rtt-filter.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\sending-controller.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\sending-queue.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\server-session.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\session-base.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\session-mgr.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\session-pkt-sender.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\session-protocol.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\session-receiver.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\session-sender.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\session-thread.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\simple-fec-controller.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\tcp-manager.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\tcp-session-pkt-assembler.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\tcp-thread.h" />
+    <ClInclude Include="..\..\..\..\src\base\net-frame\udp-manager.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8FB588A7-284E-45C6-8EAC-4540C2F61E88}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>netframe</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\output\base\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\middle\base\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\output\core\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\middle\core\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_DEBUG;JUKEY_EXPORT;_WINDOWS;_USRDLL;MSDOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\..\src\common\public;..\..\..\..\src\common\util;..\..\..\..\src\component\timer\include;..\..\..\..\src\base\com-frame\include;..\..\..\..\src\base\net-frame;..\..\..\..\src\base\net-frame\include;..\..\..\..\third-party;..\..\..\..\third-party\json;..\..\..\..\third-party\libevent\include;..\..\..\..\third-party\concurrentqueue;..\..\..\..\third-party\fec</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>..\..\..\..\output\common\util\x64\debug;..\..\..\..\third-party\libevent\lib\windows\debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>event_core.lib;ws2_32.lib;util.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;NETFRAME_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;NETFRAME_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;NDEBUG;JUKEY_EXPORT;_WINDOWS;_USRDLL;MSDOS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\..\src\common\public;..\..\..\..\src\common\timer;..\..\..\..\src\common\util;..\..\..\..\src\core\base-frame\include;..\..\..\..\src\core\net-frame;..\..\..\..\src\core\net-frame\include;..\..\..\..\third-party;..\..\..\..\third-party\json;..\..\..\..\third-party\libevent\include;..\..\..\..\third-party\concurrentqueue;..\..\..\..\third-party\fec</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>..\..\..\..\output\common\util\x64\release;..\..\..\..\third-party\libevent\lib\windows\release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>event_core.lib;ws2_32.lib;util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

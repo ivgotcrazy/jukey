@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+
+message Ping {
+	required string service_name = 1;
+	required uint32 service_type = 2;
+	required string instance_id = 3;
+}
+
+message Pong {
+	required string service_name = 1;
+	required uint32 service_type = 2;
+	required string instance_id = 3;
+}

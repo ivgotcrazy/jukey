@@ -1,0 +1,3 @@
+LIBRARY ComTest
+EXPORTS
+GetComObj @1

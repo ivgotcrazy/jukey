@@ -1,0 +1,17 @@
+service:
+  type: 7
+  name: transport-service
+  instance: transport-service-1
+  addr: UDP:127.0.0.1:5555
+  exchange: transport-exchange
+
+rabbitmq:
+  addr: TCP:192.168.7.177:5672
+  user: guest
+  pwd: guest
+
+report:
+  host: "127.0.0.1"
+  port: 8080
+  path: "/report"
+  interval: 30 # second

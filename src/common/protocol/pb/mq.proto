@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package jukey.prot;
+
+message MqMsg {
+	// Service type of source service
+	required uint32 service_type = 1;
+
+	// Instance ID of source service
+	required string instance_id = 2;
+
+	// Exchange for response message, empty means expecting no response
+	optional string exchange = 3;
+
+	// Response routing key, empty means direct exchange
+	optional string routing_key = 4;
+
+	// User define data that should return back
+	optional string user_data = 5;
+
+	// Trace information (json format)
+	optional string trace_data = 6;
+
+	// For future extending
+	optional string extend_data = 7;
+}

@@ -1,0 +1,23 @@
+service:
+  type: 8
+  name: user-service
+  instance: user-service-1
+  exchange: user-exchange
+  notify-exchange: user-notify-exchange
+
+rabbitmq:
+  addr: TCP:192.168.7.177:5672
+  user: guest
+  pwd: guest
+  
+route-service:
+  exchange: route-exchange
+
+terminal-service:
+  notify-exchange: terminal-notify-exchange
+
+report:
+  host: "127.0.0.1"
+  port: 8080
+  path: "/report"
+  interval: 30 # second
