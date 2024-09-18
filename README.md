@@ -97,7 +97,7 @@ Jukey 目标构建一个具备实时音视频、直播、录制和点播能力�
     - media-engine
     - media-player
     - rtc-engine
--service
+- service
     - common - 公共依赖
     - group-service - 分组服务
     - proxy-service - 代理服务
