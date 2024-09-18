@@ -123,6 +123,10 @@ service-box.exe
 service-box
 ```
 #### 配置
+
+<details>
+<summary>service-box 配置</summary>
+
 ```yaml
 # load components from
 component-path: ./
@@ -160,6 +164,8 @@ services:
     cid: cid-terminal-service
     config: ./service-config/terminal-service.yaml
 ```
+
+</details>
 
 ### 客户端
 
