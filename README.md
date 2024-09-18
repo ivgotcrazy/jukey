@@ -82,31 +82,31 @@ Jukey 目标构建一个具备实时音视频、直播、录制和点播能力�
         - reporter - 依赖上报
         - timer - 定时器
         - tracer - 调用链
-- demo
-    - rtc-client-demo - 实时音视频测试客户端
-- media
-    - common - 媒体处理公共依赖
-    - congestion-control - 拥塞控制（GCC）
-    - device-manager - 设备管理
-    - element - 包含音视频采集、编解码、渲染等各种音视频处理元素
-    - media-util - 媒体处理工具
-    - public - 媒体处理公共依赖
-    - streamer - Pipeline 实现
-    - transport - 音视频传输实现
-- sdk
-    - media-engine - 媒体引擎
-    - media-player - 播放器
-    - rtc-engine - RTC 引擎
-- service
-    - common - 公共依赖
-    - group-service - 分组服务
-    - proxy-service - 代理服务
-    - route-service - 路由服务
-    - service-box - 服务加载与运行底座
-    - stream-service - 流管理服务
-    - terminal-service - 终端管理服务
-    - transport-service - 音视频传输服务
-    - user-service 用户服务
+    - demo
+        - rtc-client-demo - 实时音视频测试客户端
+    - media
+        - common - 媒体处理公共依赖
+        - congestion-control - 拥塞控制（GCC）
+        - device-manager - 设备管理
+        - element - 包含音视频采集、编解码、渲染等各种音视频处理元素
+        - media-util - 媒体处理工具
+        - public - 媒体处理公共依赖
+        - streamer - Pipeline 实现
+        - transport - 音视频传输实现
+    - sdk
+        - media-engine - 媒体引擎
+        - media-player - 播放器
+        - rtc-engine - RTC 引擎
+    - service
+        - common - 公共依赖
+        - group-service - 分组服务
+        - proxy-service - 代理服务
+        - route-service - 路由服务
+        - service-box - 服务加载与运行底座
+        - stream-service - 流管理服务
+        - terminal-service - 终端管理服务
+        - transport-service - 音视频传输服务
+        - user-service 用户服务
 - test - 测试程序
 - utest - 单元测试
 - third-party - 第三方依赖
