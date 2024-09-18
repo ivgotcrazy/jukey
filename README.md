@@ -127,11 +127,13 @@ service-box
 <details>
 <summary>service-box 配置</summary>
 
-- component-path：组件路径，默认与可执行文件在相同路径。
-- load-config-interval：配置中心相关，暂时不用关注。
-- name：服务名称
-- cid：服务的 CLASS ID，service-box 基于 cid 加载并启动服务组件。
-- config：服务的配置文件，service-box 向服务组件传入指定配置文件
+|配置项|解释|
+|---|---|
+| component-path | 组件路径，默认与可执行文件在相同路径 |
+| load-config-interval | 配置中心相关，暂时不用关注 |
+| name | 服务名称 |
+| cid | 服务的 CLASS ID，service-box 基于 cid 加载并启动服务组件 |
+| config | 服务的配置文件，service-box 向服务组件传入指定配置文件 |
 
 ```yaml
 # load components from
