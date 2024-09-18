@@ -29,14 +29,14 @@ Jukey 目标构建一个具备实时音视频、直播、录制和点播能力�
 - 统一的通信机制
 - 提供开箱即用的音视频采集、编解码、渲染等 Element
 
-## Media engine
+## Media Engine
 - 基于 Streamer 封装完整音视频能力
 - 支持本地摄像头预览
 - 支持播放媒体文件
 - 音视频传输
 - 设备管理
 
-## RTC engine
+## RTC Engine
 - 基于 Media engine 封装实时音视频能力
 - 支持设备注册
 - 支持用户登录
@@ -126,6 +126,12 @@ service-box
 
 <details>
 <summary>service-box 配置</summary>
+
+- component-path：组件路径，默认与可执行文件在相同路径。
+- load-config-interval：配置中心相关，暂时不用关注。
+- name：服务名称
+- cid：服务的 CLASS ID，service-box 基于 cid 加载并启动服务组件。
+- config：服务的配置文件，service-box 向服务组件传入指定配置文件
 
 ```yaml
 # load components from
