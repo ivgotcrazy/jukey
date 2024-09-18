@@ -94,9 +94,9 @@ Jukey 目标构建一个具备实时音视频、直播、录制和点播能力�
     - streamer - Pipeline 实现
     - transport - 音视频传输实现
 - sdk
-    - media-engine
-    - media-player
-    - rtc-engine
+    - media-engine - 媒体引擎
+    - media-player - 播放器
+    - rtc-engine - RTC 引擎
 - service
     - common - 公共依赖
     - group-service - 分组服务
