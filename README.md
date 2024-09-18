@@ -127,6 +127,8 @@ service-box
 <details>
 <summary>service-box 配置</summary>
 
+<div style="width:100%;">
+
 |配置项|解释|
 |---|---|
 | component-path | 组件路径，默认与可执行文件在相同路径 |
@@ -134,6 +136,8 @@ service-box
 | name | 服务名称 |
 | cid | 服务的 CLASS ID，service-box 基于 cid 加载并启动服务组件 |
 | config | 服务的配置文件，service-box 向服务组件传入指定配置文件 |
+
+</div>
 
 ```yaml
 # load components from
